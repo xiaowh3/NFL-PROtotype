@@ -1,0 +1,15 @@
+body {
+    background-color: lightblue;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+ 
+.line_bold {
+    text-decoration: underline;
+    font-weight: bold;
+}
+ 
+p, ul{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}

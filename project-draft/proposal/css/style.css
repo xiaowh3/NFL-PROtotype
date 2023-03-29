@@ -1,0 +1,184 @@
+.logo_img {
+    height: 75px;
+}
+
+body {
+    font-family: "Helvetica", "Roboto", sans-serif;
+}
+
+.ranking {
+    overflow: hidden;
+    height: 100vh;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.ranking_title {
+    display: flex;
+    padding: 0.25rem;
+    text-align: center;
+    background-color: lightblue;
+    background-image: url("../img/tony_anderson.webp");
+    background-size: contain;
+}
+
+.ranking_title h1 {
+    flex: 3;
+}
+
+.rank_container {
+    display: flex;
+}
+
+.rank_card {
+    position: center;
+    display: flex;
+    margin: 1rem;
+    background-color: grey;
+    border-radius: 15px;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_stack {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.card_stats ul {
+    text-align: left;
+}
+
+.card_stats {
+    text-align: left;
+}
+
+.extra_stats h3 {
+    padding: 5rem 2rem 0 3rem;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.extra_stats ul {
+    padding-left: 5rem;
+}
+
+.extra_stats {
+    display: none;
+}
+
+.card_content h2 {
+    padding: 1rem;
+}
+
+.card_content h3 {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.card_stats {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.rank_card img {
+    margin: 0.5rem;
+    border-radius: 15px;
+    max-height: 200px;
+    max-width: 200px;
+    border: 5px solid #000000;
+}
+
+.sort_column {
+    background-color: lightcyan;
+    height: 100vh;
+    display: none;
+    text-align: center;
+    flex: 1;
+}
+
+footer {
+    padding: 0.25rem;
+    background-color: lightcyan;
+}
+
+.sort_column input {
+    margin: 0.25rem;
+}
+
+.sort_column .search {
+    padding: 0.75rem;
+}
+
+.sort_column img {
+    justify-content: end;
+}
+
+.sort_column label {
+    margin: 0.25rem;
+}
+
+.sort_column input::placeholder {
+    overflow: visible;
+}
+
+
+
+@media (min-width: 768px) {
+    .extra_stats {
+        display: block;
+    }
+
+    .sim_player_name {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .sort_column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ranking_title h1 {
+        font-size: 2rem;
+    }
+
+    .rank_search, .rank_filter {
+        display: none;
+    }
+
+    .extra_stats {
+        display: none;
+    }
+
+    .player_heading {
+        font-size: 2.5rem;
+    }
+
+    .sim_players {
+        font-size: 2rem;
+        padding-bottom: 3;
+    }
+
+    .sim_player_name {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .extra_stats {
+        display: block;
+    }
+}

@@ -1,0 +1,329 @@
+/* All Pages */
+
+html {
+    background-color: #2b0870;
+}
+
+body {
+    font-family: "Helvetica", "Roboto", sans-serif;
+}
+
+footer {
+    height: 3rem;
+    background-color: #2b0870;
+    width:100%;
+}
+
+footer p {
+    padding: 1rem;
+}
+
+/* Index */
+
+.page_title {
+    display: flex;
+    width: 100vw;
+    padding: 0.25rem;
+    text-align: center;
+    color: white;
+    background-color: #2b0870;
+}
+
+.page_title h1 {
+    flex: 1;
+}
+
+
+.rank_container {
+    display: flex;
+}
+
+.rank_card {
+    position: center;
+    display: flex;
+    margin: 1rem;
+    background-color: #BBD5ED;
+    border-radius: 15px;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_stack {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.card_stats ul {
+    text-align: left;
+}
+
+.card_stats {
+    text-align: left;
+}
+
+.extra_stats h3 {
+    padding: 5rem 2rem 0 3rem;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.extra_stats ul {
+    padding-left: 5rem;
+}
+
+.extra_stats {
+    display: none;
+}
+
+.card_content h2 {
+    padding: 1rem;
+}
+
+.card_content h3 {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.card_stats {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.rank_card img {
+    margin: 0.5rem;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+    border: 3px solid #2b0870;
+}
+
+.sort_column {
+    background-color: lightcyan;
+    height: 100vh;
+    display: none;
+    text-align: center;
+    flex: 1;
+}
+
+.position_card img {
+    max-height: 150px;
+    max-width: 300px;
+}
+
+.sort_column input {
+    margin: 0.25rem;
+}
+
+.sort_column .search {
+    padding: 0.5rem;
+    margin: 1rem 0.5rem
+}
+
+.sort_column img {
+    justify-content: end;
+}
+
+.sort_column label {
+    margin: 0.25rem;
+}
+
+.sort_column input::placeholder {
+    overflow: visible;
+}
+
+/* Player Details */
+
+.sim_players {
+    padding: 1rem 0;
+}
+
+.sim-img-card {
+    height: 10rem;
+    object-fit: cover;
+}
+
+.sim-player-img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.card-box {
+    height: 14rem;
+    width: 15rem;
+}
+
+/* Homepage & About Us */
+
+.bg-pic {
+    background-image: url('../img/bgImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 820px;
+}
+
+.bg-pic section {
+    margin-top: 140px;
+}
+
+/* Homepage */
+
+.homepage button {
+    margin: 40px;
+    max-width: 400px;
+}
+
+.homepage p {
+    font-weight: 600;
+    font-size: 2rem;
+    margin:0;
+}
+
+.homepage a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.btn-light {
+    background: #D9D9D9;
+}
+
+/* About Us */
+
+.about_us p {
+    margin-bottom: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.about_us h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 8px;
+}
+
+/* Navbar */
+
+nav img {
+    height: 75px;
+}
+
+.navbar {
+    padding: 0;
+    background-color: #BBD5ed;
+}
+
+.navbar-toggler{
+    border: none;
+    color: transparent;
+}
+
+nav .nav-link {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+nav span {
+    padding-top: 3px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+/* Position Selection */
+
+.position_selection img {
+    border-radius: 8px;
+}
+
+/* Compare */
+
+.form-check label {
+    font-size: 1.3rem;
+}
+
+/* @media */
+
+@media (min-width: 768px) {
+    .extra_stats {
+        display: block;
+    }
+
+    .sim_player_name {
+        font-size: 1rem;
+    }
+
+    .sim_players {
+        font-size: 2rem;
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sort_column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page_title {
+        font-size: 2rem;
+    }
+
+    .rank_search, .rank_filter, .extra_stats {
+        display: none;
+    }
+
+    .player_heading {
+        font-size: 2.5rem;
+    }
+
+    .homepage p {
+        font-weight: 800;
+        font-size: 2.5rem;
+    }
+
+    .homepage a {
+        font-size: 2rem;
+    }
+
+    .about_us h1 {
+        font-weight: 800;
+        font-size: 2.5rem;
+        margin: 10px;
+    }
+    
+    .about_us p {
+        margin-bottom: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .sim_player_name {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .extra_stats {
+        display: block;
+    }
+}
